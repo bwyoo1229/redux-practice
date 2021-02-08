@@ -10,6 +10,7 @@ export const addTodo = text => {
     type: ADD_TODO,
     todo: {
       id: currentId,
+      text: text,
     },
   };
 };
@@ -27,7 +28,7 @@ const initialState = [];
     text: 'example',
     done: false,
   }
-]å
+]
 */
 
 export default function todos(state = initialState, action) {
